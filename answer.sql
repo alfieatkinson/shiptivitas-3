@@ -23,8 +23,8 @@ ORDER BY date;
 -- PART 2: Create a SQL query that indicates the number of status changes by card
 
 SELECT
-    card_id,
+    cardID,
     COUNT(*) AS status_change_count
 FROM card_change_history
-GROUP BY card_id
+GROUP BY cardID
 ORDER BY status_change_count DESC;
